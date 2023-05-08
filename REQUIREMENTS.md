@@ -32,8 +32,8 @@ These are the notes from a meeting with the frontend developer that describe wha
 #### Orders
 - Create [token required] 
   [POST] 'orders'
-- Add product to order [token required] (:id is order_id)  
-  * [POST] 'orders/:id/products'
+- Add product to order [token required] 
+  * [POST] 'orders/:id/products'   =>   (`:id`: order id)
   * [BODY] {
     productId: string
     quantity: string,
@@ -77,7 +77,7 @@ TABLE users (
 #### Orders
 - id
 - user_id
-- status of order (active or complete)
+- status of order (NEW or COMPLETE)
 
 ```sql
 TABLE orders (

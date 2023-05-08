@@ -77,12 +77,12 @@ POSTGRES_PASSWORD=storefont123_test
 DB_PORT=5433
 ```
 
-2. Start docker compose with test config
+2. Start docker compose with test config:
 ```bash
 docker compose --env-file ./test.env -f docker-compose.test.yml up -d
 ```
 
-3. Run test with
+3. Run test with:
 ```bash
 yarn test
 ```
